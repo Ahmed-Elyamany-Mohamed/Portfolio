@@ -1,45 +1,43 @@
 
 function toggleDarkMode() {
     const body = document.body;
+    const logo = document.getElementById('theme-logo');
+
     const currentMode = localStorage.getItem('theme');
   
 
     if (currentMode === 'dark') {
         body.classList.remove('dark-mode');
-        // logo.src = '../images/icons/dark-logo.svg';
-        // light.classList.remove('light');
+        logo.src = '../images/logo/light-logo.png';
+
 
         localStorage.setItem('theme', 'light');
     } else {
         body.classList.add('dark-mode');
-        // dark.classList.add('dark');
-        // logo.src = '../images/icons/light-logo.svg';
-        // logo.src = '../images/icons/1-removebg-preview.png';
-        // images\icons\1-removebg-preview.png
+        logo.src = '../images/logo/dark-logo.png';
+
+        
         localStorage.setItem('theme', 'dark');
     }
     
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    let light=document.querySelector('.light');
-    let dark=document.querySelector('.dark');
+    const logo = document.getElementById('theme-logo');
+    
     if (localStorage.getItem('theme') === 'dark') {
         document.body.classList.add('dark-mode');
-        light.classList.remove('light');
-
+        logo.src = '../images/logo/dark-logo.png';
     }
     else{
-        
-        // dark.classList.add('dark');
-
-
+        logo.src = '../images/logo/light-logo.png';
 
     }
 });
 document.getElementById('dark-mode-toggle').addEventListener('click', toggleDarkMode);
 
-// --------------------------------------------------------
+// !--------------------------------------------------------
+
 const words = [" Developer.", " Designer.", " Creator."];
 let currentWordIndex = 0;
 let currentCharIndex = 0;

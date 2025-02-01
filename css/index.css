@@ -457,13 +457,22 @@ position: absolute;
 
 /* *section about me */
 .sec-btn{
-    margin-bottom: 2.4rem;
-    border-radius: 1.2rem;
-    font-size: 1.4rem;
-    font-weight: 500;
-    width: 10.5rem;
-    height: 2.8rem;
-    margin-top: 4rem;
+  display: inline-block;        /* so it only takes as much space as needed */
+  margin-bottom: 2.6rem;        /* matches your original margin */
+  padding:0.5rem 1rem;           /* adjust for more/less space inside the box */
+  border-radius: 1.2rem;        /* rounded corners */
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  width: fit-content;           /* shrink-to-fit */
+  text-decoration: none;        /* remove underline if it’s an <a> */
+  box-sizing: border-box;       /* helps control padding/width combos */
+  background-color: #E5E7EB;
+  color: #4B5563;
+}
+body.dark-mode .sec-btn{
+  background-color: #374151;
+  color: #D1D5DB;
 }
 .Curious{
     margin-top: 4.8rem;
@@ -690,6 +699,10 @@ flex-wrap: wrap;
   gap: 1rem;
 }
 
+.hero , .about-me , .skills , .experience , .project , .contact{
+  margin-bottom: 10rem;
+  }
+
 }
 
 
@@ -807,15 +820,12 @@ header{
 
 }
 
-
-
 .collapse ul .button{
   width: fit-content;
   height: fit-content;
   font-size: 1.6rem;
   color: white;
   background-color: black;
-  margin-left: 3.2rem;
   border-radius: 1.2rem;
   padding: 0.5rem;
   }
@@ -825,8 +835,8 @@ header{
   
 .navbar{
   margin-top: 1rem;
-  font-size: 3rem;;
-  width: 160%;}
+  font-size: 3rem;
+}
 .navbar-brand,.nav-item,.navbar-toggler-icon{
 font-size: 3rem;
 }
@@ -920,16 +930,24 @@ padding-right: 0.4rem;
 }
 /* *section about me */
 .sec-btn{
-  margin-bottom: 2.6rem;
-  border-radius: 1.2rem;
-  font-size: 2.2rem;
+  display: inline-block;        /* so it only takes as much space as needed */
+  margin-bottom: 2.6rem;        /* matches your original margin */
+  padding:0.5rem 1rem;           /* adjust for more/less space inside the box */
+  border-radius: 1.2rem;        /* rounded corners */
+  font-size: 1.8rem;
   font-weight: 500;
-  /* width: 10.5rem; */
-  width: fit-content;
   text-align: center;
-  height: fit-content;
-position: absolute;
-top: 0;
+  width: fit-content;           /* shrink-to-fit */
+  text-decoration: none;        /* remove underline if it’s an <a> */
+  box-sizing: border-box;       /* helps control padding/width combos */
+  background-color: #E5E7EB;
+  color: #4B5563;
+  position: absolute;
+  top: 0;
+}
+body.dark-mode .sec-btn{
+  background-color: #374151;
+  color: #D1D5DB;
 }
 .title-sec{
   margin-top: 5rem;
@@ -1237,6 +1255,10 @@ flex-wrap: wrap;
 }
 
 
+
+.hero , .about-me , .skills , .experience , .project , .contact{
+  margin-bottom: 15rem;
+  }
 }
 
 
@@ -1476,16 +1498,24 @@ padding-right: 0.4rem;
 
 /* *section about me */
 .sec-btn{
-  margin-bottom: 2.6rem;
-  border-radius: 1.2rem;
-  font-size: 1.7rem;
+  display: inline-block;        /* so it only takes as much space as needed */
+  margin-bottom: 2.6rem;        /* matches your original margin */
+  padding:0.5rem 1rem;           /* adjust for more/less space inside the box */
+  border-radius: 1.2rem;        /* rounded corners */
+  font-size: 1.4rem;
   font-weight: 500;
-  /* width: 10.5rem; */
-  width: fit-content;
   text-align: center;
-  height: fit-content;
-position: absolute;
-top: 0;
+  width: fit-content;           /* shrink-to-fit */
+  text-decoration: none;        /* remove underline if it’s an <a> */
+  box-sizing: border-box;       /* helps control padding/width combos */
+  background-color: #E5E7EB;
+  color: #4B5563;
+  position: absolute;
+  top: 0;
+}
+body.dark-mode .sec-btn{
+  background-color: #374151;
+  color: #D1D5DB;
 }
 .title-sec{
   margin-top: 5rem;
@@ -1499,7 +1529,7 @@ top: 0;
   gap: 4.8rem;
   align-content: center;
   justify-content: center;
-  width: 160rem;
+  width: 170rem;
 
 
 }
@@ -1567,7 +1597,7 @@ grid-template-columns: repeat(2,1fr);
   align-items: center;
   margin-top: 9.6rem;
   margin-bottom: 3rem;
-  width: 160rem;
+  width: 170rem;
 
 }
 .skills .skills-info .row{
@@ -1600,7 +1630,7 @@ width: 9rem;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  width: 160rem;
+  width: 170rem;
 
 }
 .exp-card{
@@ -1676,7 +1706,7 @@ object-fit: contain;
   display: flex;
           flex-direction: column;
           align-items: center;
-          width: 160rem;
+          width: 170rem;
 
     
 }
@@ -1765,7 +1795,7 @@ flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 160rem;
+  width: 165rem;
 
 }
 
@@ -1812,6 +1842,10 @@ flex-wrap: wrap;
   gap: 1rem;
 }
 
+
+.hero , .about-me , .skills , .experience , .project , .contact{
+  margin-bottom: 15rem;
+  }
 
 
 }
@@ -2159,17 +2193,25 @@ padding-right: 0.4rem;
 
 
 /* *section about me */
-.sec-btn{
-  margin-bottom: 2.6rem;
-  border-radius: 1.2rem;
+ .sec-btn{
+  display: inline-block;        /* so it only takes as much space as needed */
+  margin-bottom: 2.6rem;        /* matches your original margin */
+  padding:0.5rem 1rem;           /* adjust for more/less space inside the box */
+  border-radius: 1.2rem;        /* rounded corners */
   font-size: 1.7rem;
   font-weight: 500;
-  /* width: 10.5rem; */
-  width: fit-content;
   text-align: center;
-  height: fit-content;
-position: absolute;
-top: 0;
+  width: fit-content;           /* shrink-to-fit */
+  text-decoration: none;        /* remove underline if it’s an <a> */
+  box-sizing: border-box;       /* helps control padding/width combos */
+  background-color: #E5E7EB;
+  color: #4B5563;
+  position: absolute;
+  top: 0;
+}
+body.dark-mode .sec-btn{
+  background-color: #374151;
+  color: #D1D5DB;
 }
 .title-sec{
   margin-top: 5rem;
@@ -2269,6 +2311,7 @@ font-size: 10rem;
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  margin-bottom: 20rem;
 }
 .exp-card{
   width: 89.6rem;
@@ -2476,6 +2519,12 @@ flex-wrap: wrap;
   text-align: center;
   font-size: 2rem;
   gap: 1rem;
+}
+
+
+
+.hero , .about-me , .skills , .experience , .project , .contact{
+margin-bottom: 15rem;
 }
 
 
