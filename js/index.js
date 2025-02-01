@@ -8,13 +8,13 @@ function toggleDarkMode() {
 
     if (currentMode === 'dark') {
         body.classList.remove('dark-mode');
-        logo.src = '../images/logo/light-logo.png';
+        logo.src = '../images/logos/light-logo.png';
 
 
         localStorage.setItem('theme', 'light');
     } else {
         body.classList.add('dark-mode');
-        logo.src = '../images/logo/dark-logo.png';
+        logo.src = '../images/logos/dark-logo.png';
 
         
         localStorage.setItem('theme', 'dark');
@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (localStorage.getItem('theme') === 'dark') {
         document.body.classList.add('dark-mode');
-        logo.src = '../images/logo/dark-logo.png';
+        logo.src = '../images/logos/dark-logo.png';
     }
     else{
-        logo.src = '../images/logo/light-logo.png';
+        logo.src = '../images/logos/light-logo.png';
 
     }
 });
